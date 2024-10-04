@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class CoursesService {
   constructor() { }
-  courses_data :Course[]=[
+  courses_data: Course[] = [
     {
       course_id: 101,
       title: 'Introduction to Scratch Programming',
@@ -14,7 +14,9 @@ export class CoursesService {
       difficulty: 'Beginner',
       duration: '3 weeks',
       author: 'Fatima Nabil',
-      category: 'gaming'
+      category: 'gaming',
+      videos: 15,
+      photo: ''
     },
     {
       course_id: 102,
@@ -23,7 +25,9 @@ export class CoursesService {
       difficulty: 'Intermediate',
       duration: '4 weeks',
       author: 'Ahmed Samir',
-      category: 'gaming'
+      category: 'gaming',
+      videos: 88,
+      photo: ''
     },
     {
       course_id: 103,
@@ -32,7 +36,9 @@ export class CoursesService {
       difficulty: 'Beginner',
       duration: '5 weeks',
       author: 'Mariam Ali',
-      category: 'web'
+      category: 'web',
+      videos: 88,
+      photo: ''
     },
     {
       course_id: 104,
@@ -41,7 +47,9 @@ export class CoursesService {
       difficulty: 'Beginner',
       duration: '6 weeks',
       author: 'Mohamed Hassan',
-      category: 'AI'
+      category: 'AI',
+      videos: 88,
+      photo: ''
     },
     {
       course_id: 105,
@@ -50,7 +58,9 @@ export class CoursesService {
       difficulty: 'Intermediate',
       duration: '7 weeks',
       author: 'Sara Abdelrahman',
-      category: 'gaming'
+      category: 'gaming',
+      videos: 70,
+      photo: ''
     },
     {
       course_id: 106,
@@ -59,7 +69,9 @@ export class CoursesService {
       difficulty: 'Advanced',
       duration: '8 weeks',
       author: 'Hassan Youssef',
-      category: 'AI'
+      category: 'AI',
+      videos: 85,
+      photo: ''
     },
     {
       course_id: 107,
@@ -68,7 +80,9 @@ export class CoursesService {
       difficulty: 'Intermediate',
       duration: '6 weeks',
       author: 'Omar Khaled',
-      category: 'web'
+      category: 'web',
+      videos: 65,
+      photo: ''
     },
     {
       course_id: 108,
@@ -77,7 +91,9 @@ export class CoursesService {
       difficulty: 'Beginner',
       duration: '4 weeks',
       author: 'Layla Ibrahim',
-      category: 'gaming'
+      category: 'gaming',
+      videos: 120,
+      photo: ''
     },
     {
       course_id: 109,
@@ -86,7 +102,9 @@ export class CoursesService {
       difficulty: 'Advanced',
       duration: '8 weeks',
       author: 'Nour El-Din',
-      category: 'gaming'
+      category: 'gaming',
+      videos: 90,
+      photo: ''
     },
     {
       course_id: 110,
@@ -95,7 +113,9 @@ export class CoursesService {
       difficulty: 'Advanced',
       duration: '9 weeks',
       author: 'Khaled Mostafa',
-      category: 'mobile'
+      category: 'mobile',
+      videos: 160,
+      photo: ''
     }
   ]
 
