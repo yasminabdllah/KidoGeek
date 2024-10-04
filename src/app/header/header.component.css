@@ -1,4 +1,22 @@
+.main_header{
+  box-shadow: #eee 0 2px 2px 0;
+}
+.main_header nav{
+  padding: 0px;
+}
 .activeLink{
-  color: aquamarine !important;
+  color: #FC800A !important;
   text-decoration: underline;
+}
+.logo{
+  width: 120px;
+  height: 80px;
+  margin-right: 10px;
+}
+.bttn{
+  border-radius: 20px;
+  box-shadow: #FC800A 0 0 4px 0.5px;
+  color: #FC800A;
+  margin-right: 10px;
+  font-size: 14px;
 }

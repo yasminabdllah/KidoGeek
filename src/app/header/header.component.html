@@ -1,19 +1,36 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" routerLink="home">Logo</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" routerLinkActive="activeLink" routerLink="home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLinkActive="activeLink" routerLink="about">About</a>
-        </li>
-      </ul>
+<app-top-header></app-top-header>
+<div class="main_header">
+  <nav class="navbar navbar-expand-lg container">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="home"><img src="../../assets/Logo.svg" alt="Logo" class="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" routerLinkActive="activeLink" routerLink="home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="activeLink" routerLink="about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="activeLink" routerLink="courses">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="activeLink" routerLink="blog">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="activeLink" routerLink="community">Community</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav justify-content-end">
+        <button type="button" class="nav-item btn"><img src="../../assets/search.png" alt="search"></button>
+        <button type="button" class="nav-item btn bttn">Login</button>
+        <button type="button" class="nav-item btn bttn">Sign Up</button>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</div>

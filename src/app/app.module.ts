@@ -8,6 +8,10 @@ import { FooterpagesComponent } from './footerpages/footerpages.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { BlogComponent } from './blog/blog.component';
+import { CommunityComponent } from './community/community.component';
+import { CourseComponent } from './course/course.component';
+import { TopHeaderComponent } from './top-header/top-header.component';
 
 
 @NgModule({
@@ -18,6 +22,10 @@ import { NotFoundComponent } from './not-found/not-found.component';
     HomeComponent,
     AboutComponent,
     NotFoundComponent,
+    BlogComponent,
+    CommunityComponent,
+    CourseComponent,
+    TopHeaderComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,9 @@
+.top_header_style{
+  background-image: linear-gradient(rgba(253, 126, 8,0.6)
+  ,rgba(253, 126, 8,0.7)
+  ,rgba(253, 126, 8,1));
+  padding: 5px 0 0.1px;
+}
+.top_header_style p{
+  color: #fff;
+}
