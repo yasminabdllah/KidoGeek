@@ -7,7 +7,7 @@
 }
 .card-info div p{
   color: #FC800A;
-} 
+}
 .card-info button{
   background-color: transparent;
   border-radius: 15px;
@@ -21,4 +21,8 @@
   cursor: pointer;
   transform: scale(1.02);
   transition: all ease 0.5s;
+}
+.links_sytyle{
+  cursor: pointer;
+  color: #FC800A;
 }

@@ -1,6 +1,6 @@
 <p class="text-center mt-2 text-success fw-bold fs-5">Other blogs</p>
 <div class="d-flex justify-content-evenly flex-wrap my-4">
-  <div *ngFor="let blog of blogs.blogs_data let i=index" class="card-scale my-3">
+  <div *ngFor="let blog of paginatedBlog let i=index" class="card-scale my-3">
     <div class="blog-card">
       <img [src]="blog.photo" alt="blog">
       <div class="card-info">
@@ -26,4 +26,12 @@
       </div>
     </div>
   </div>
+</div>
+
+<div>
+  <ul class="pagination pagination-sm justify-content-center">
+    <li class="page-item" *ngFor="let page of totalPages">
+      <a class="page-link links_sytyle" (click)="setPage(page)">{{ page }}</a>
+    </li>
+  </ul>
 </div>
