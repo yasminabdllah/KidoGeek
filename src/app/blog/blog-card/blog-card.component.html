@@ -1,0 +1,29 @@
+<p class="text-center mt-2 text-success fw-bold fs-5">Other blogs</p>
+<div class="d-flex justify-content-evenly flex-wrap my-4">
+  <div *ngFor="let blog of blogs.blogs_data let i=index" class="card-scale my-3">
+    <div class="blog-card">
+      <img [src]="blog.photo" alt="blog">
+      <div class="card-info">
+        <div class="d-flex justify-content-between fw-bold ">
+          <p>{{blog.author}}</p>
+          <p>
+            {{blog.date}}
+          </p>
+        </div>
+        <h6 class="fw-bold">
+          {{blog.title}}
+        </h6>
+        <p *ngIf="!blog.showFullText" class="text-body-secondary text">
+          {{ blog.content | slice:0:maxLength }}
+          <span *ngIf="!blog.showFullText">...</span>
+        </p>
+        <p *ngIf="blog.showFullText" class="text-body-secondary text">
+          {{ blog.content }}
+        </p>
+        <button (click)="toggleText(i)">
+          {{ blog.showFullText ? 'Show less' : 'Read more' }}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

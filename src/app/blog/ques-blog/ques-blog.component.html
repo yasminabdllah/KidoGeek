@@ -1,0 +1,22 @@
+<div>
+  <p class="fw-semibold">
+    Table of Contents
+  </p>
+  <p>Here's what we cover in this article. If you see what you're looking for,
+    just click on the link to go directly to that section.</p>
+  <div *ngFor="let ques of Table_content_questions let i = index">
+    <div class="question-style d-flex justify-content-between">
+      <h6 class="fw-bold">
+        {{ques.question}}
+      </h6>
+      <button type="button" class="fw-bold fs-2 my-2 me-5  button_style" (click)="open_answer(i)">+</button>
+    </div>
+    <div *ngIf="ques.open">
+      <p class="text-break text-body-secondary mx-5 ">
+        {{ques.answer}}
+      </p>
+      <img [src]="ques.photo" alt="photo" class="mx-auto d-block">
+    </div>
+  </div>
+</div>
+

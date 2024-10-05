@@ -1,0 +1,12 @@
+h6{
+  color: #FC800A;
+}
+.button_style{
+  border: none;
+  color:  #FC800A ;
+  background-color: transparent;
+  transition: all ease 0.5s;
+}
+.button_style:hover{
+  transform: rotate(45deg) scale(1.5);
+}

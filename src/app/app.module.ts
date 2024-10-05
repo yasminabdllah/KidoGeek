@@ -12,6 +12,9 @@ import { BlogComponent } from './blog/blog.component';
 import { CommunityComponent } from './community/community.component';
 import { CourseComponent } from './course/course.component';
 import { TopHeaderComponent } from './top-header/top-header.component';
+import { QuesBlogComponent } from './blog/ques-blog/ques-blog.component';
+import { BlogCardComponent } from './blog/blog-card/blog-card.component';
+
 
 
 @NgModule({
@@ -26,6 +29,9 @@ import { TopHeaderComponent } from './top-header/top-header.component';
     CommunityComponent,
     CourseComponent,
     TopHeaderComponent,
+    QuesBlogComponent,
+    BlogCardComponent,
+
   ],
   imports: [
     BrowserModule,

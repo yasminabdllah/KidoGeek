@@ -5,10 +5,15 @@
   box-sizing: border-box;
   font-size: 18px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(--bs-dark-text-emphasis);
 }
 
 .logo {
   width: 120px;
   height: 80px;
   margin-right: 10px;
+}
+main{
+  background-color: #fffdf8;
+  margin: 0;
 }
