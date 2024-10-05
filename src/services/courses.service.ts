@@ -15,8 +15,10 @@ export class CoursesService {
       duration: '3 weeks',
       author: 'Fatima Nabil',
       category: 'gaming',
-      videos: 15,
-      photo: ''
+      num_of_videos: 88,
+      photo: '',
+      price: 90,
+      videos:['','']//write the path of each of video
     },
     {
       course_id: 102,
@@ -26,8 +28,10 @@ export class CoursesService {
       duration: '4 weeks',
       author: 'Ahmed Samir',
       category: 'gaming',
-      videos: 88,
-      photo: ''
+      num_of_videos: 75,
+      photo: '',
+      price: 58,
+      videos:['','']
     },
     {
       course_id: 103,
@@ -37,8 +41,10 @@ export class CoursesService {
       duration: '5 weeks',
       author: 'Mariam Ali',
       category: 'web',
-      videos: 88,
-      photo: ''
+      num_of_videos: 50,
+      photo: '',
+      price: 30,
+      videos:['','']
     },
     {
       course_id: 104,
@@ -48,8 +54,10 @@ export class CoursesService {
       duration: '6 weeks',
       author: 'Mohamed Hassan',
       category: 'AI',
-      videos: 88,
-      photo: ''
+      num_of_videos: 75,
+      photo: '',
+      price: 120,
+      videos:['','']
     },
     {
       course_id: 105,
@@ -59,8 +67,10 @@ export class CoursesService {
       duration: '7 weeks',
       author: 'Sara Abdelrahman',
       category: 'gaming',
-      videos: 70,
-      photo: ''
+      num_of_videos: 15,
+      photo: '',
+      price: 130,
+      videos:['','']
     },
     {
       course_id: 106,
@@ -70,8 +80,10 @@ export class CoursesService {
       duration: '8 weeks',
       author: 'Hassan Youssef',
       category: 'AI',
-      videos: 85,
-      photo: ''
+      num_of_videos: 129,
+      photo: '',
+      price: 70,
+      videos:['','']
     },
     {
       course_id: 107,
@@ -81,8 +93,10 @@ export class CoursesService {
       duration: '6 weeks',
       author: 'Omar Khaled',
       category: 'web',
-      videos: 65,
-      photo: ''
+      num_of_videos: 88,
+      photo: '',
+      price: 58,
+      videos:['','']
     },
     {
       course_id: 108,
@@ -92,8 +106,10 @@ export class CoursesService {
       duration: '4 weeks',
       author: 'Layla Ibrahim',
       category: 'gaming',
-      videos: 120,
-      photo: ''
+      num_of_videos: 53,
+      photo: '',
+      price: 98,
+      videos:['','']
     },
     {
       course_id: 109,
@@ -103,8 +119,10 @@ export class CoursesService {
       duration: '8 weeks',
       author: 'Nour El-Din',
       category: 'gaming',
-      videos: 90,
-      photo: ''
+      num_of_videos: 20,
+      photo: '',
+      price: 52,
+      videos:['','']
     },
     {
       course_id: 110,
@@ -114,8 +132,10 @@ export class CoursesService {
       duration: '9 weeks',
       author: 'Khaled Mostafa',
       category: 'mobile',
-      videos: 160,
-      photo: ''
+      num_of_videos: 160,
+      photo: '',
+      price: 480,
+      videos:['','']
     }
   ]
 

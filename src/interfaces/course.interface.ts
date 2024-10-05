@@ -6,6 +6,8 @@ export interface Course {
   duration: string;
   author: string;
   category: string;
-  videos: number;
+  num_of_videos: number;
   photo: string;
+  videos: string[];
+  price: number;
 }
