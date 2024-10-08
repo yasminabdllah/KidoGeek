@@ -14,6 +14,8 @@ import { CourseComponent } from './course/course.component';
 import { TopHeaderComponent } from './top-header/top-header.component';
 import { QuesBlogComponent } from './blog/ques-blog/ques-blog.component';
 import { BlogCardComponent } from './blog/blog-card/blog-card.component';
+import { SearchComponent } from './search/search.component';
+import { SearchResultComponent } from './search/search-result/search-result.component';
 
 
 
@@ -31,6 +33,8 @@ import { BlogCardComponent } from './blog/blog-card/blog-card.component';
     TopHeaderComponent,
     QuesBlogComponent,
     BlogCardComponent,
+    SearchComponent,
+    SearchResultComponent,
 
   ],
   imports: [

@@ -1,0 +1,27 @@
+main{
+  min-height: 100vh;
+}
+.search-course{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.search-course-input{
+  padding: 10px 15px ;
+  border-radius: 20px;
+  width: 500px;
+}
+
+.btn-search{
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 10px;
+  transition: all ease 0.5s;
+}
+.btn-search:hover{
+  color: #FC800A;
+  transform: scale(1.2);
+  text-shadow: #eee 0px 4px;
+}
