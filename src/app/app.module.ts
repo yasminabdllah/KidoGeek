@@ -16,6 +16,7 @@ import { QuesBlogComponent } from './blog/ques-blog/ques-blog.component';
 import { BlogCardComponent } from './blog/blog-card/blog-card.component';
 import { SearchComponent } from './search/search.component';
 import { SearchResultComponent } from './search/search-result/search-result.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -39,7 +40,8 @@ import { SearchResultComponent } from './search/search-result/search-result.comp
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

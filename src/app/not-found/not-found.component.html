@@ -1,1 +1,38 @@
-<h1 class="text-center flex-center">PAGE NOT FOUND</h1>
+<main>
+  <img src="../../assets/notFoundPage.jpg" alt="not found">
+  <div>
+    <h1>
+      Uh oh!
+    </h1>
+    <p class="fs-4 fw-2">You seem to have lost your way.</p>
+    <p class="fs-4 fw-2">Let us help you find what you were looking for:</p>
+    <ul>
+      <li>
+        <p>
+          See what's happening on the
+          <a [routerLink]="'/home'">Home</a>
+        </p>
+      </li>
+      <li>
+        <p>
+          Read about us
+          <a [routerLink]="'/about'">About Us</a>
+        </p>
+      </li>
+      <li>
+        <p>
+          Sign up for a see All courses
+          <a [routerLink]="'/home'">Register</a>
+          <!-- Remmeber you should change the route when get page register -->
+        </p>
+      </li>
+      <li>
+        <p>
+          Sign in if you have an acounnt
+          <a [routerLink]="'/home'">Login</a>
+          <!-- Remmeber you should change the route when get page Login -->
+        </p>
+      </li>
+    </ul>
+  </div>
+</main>
