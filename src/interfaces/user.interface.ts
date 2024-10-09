@@ -1,9 +1,12 @@
 export interface User {
   id:number;
 	user_name: string;
+  email: string;
 	password: string;
-	role: string;
+  photo:string;
   age: number;
+	role: string;
+  comments: string[];
   enrolled: number[];
   progress: string[];
 }
