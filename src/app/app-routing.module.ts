@@ -8,6 +8,7 @@ import { BlogComponent } from './blog/blog.component';
 import { CourseComponent } from './course/course.component';
 import { CommunityComponent } from './community/community.component';
 import { SearchComponent } from './search/search.component';
+import { CartComponent } from './cart/cart.component';
 
 
 const routes: Routes = [
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'blog', component: BlogComponent, title: 'blog' },
   { path: 'community', component: CommunityComponent, title: 'community' },
   { path: 'search', component: SearchComponent, title: 'search' },
+  { path: 'Cart', component: CartComponent, title: 'cart' },
   { path: '**', component: NotFoundComponent, title: 'Error' },
 ];
 

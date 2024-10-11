@@ -32,6 +32,14 @@
             <img src="../../assets/search.png" alt="search">
           </a>
         </button>
+        <button type="button" class="nav-item btn btn_cart">
+          <a routerLinkActive="activeLink" routerLink="/Cart" class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+          <span>
+            {{numberofItem()}}
+          </span>
+        </button>
         <button type="button" class="nav-item btn bttn">Login</button>
         <button type="button" class="nav-item btn bttn">Sign Up</button>
       </div>
