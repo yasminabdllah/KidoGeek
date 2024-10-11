@@ -1,1 +1,123 @@
-<p>community works!</p>
+
+<div class="container">
+  <h2>Our Events</h2>
+</div>
+  
+
+
+<div class="carousel">
+    <input type="radio" name="slides" id="slide1" checked>
+    <input type="radio" name="slides" id="slide2">
+    <input type="radio" name="slides" id="slide3">
+    <input type="radio" name="slides" id="slide4">
+    <input type="radio" name="slides" id="slide5">
+    <input type="radio" name="slides" id="slide6">
+    <input type="radio" name="slides" id="slide7">
+
+    <div class="slides">
+        <div class="slide d-flex justify-content-center align-items-center" style="height: 300px;">
+            <div class="card" style="width: 30rem;">
+                <img src="../../assets/events/coding.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h3 class="card-title">Interactive Coding Classes</h3>
+                  <p class="card-text"> classes where kids learn programming languages like Scratch, Python, or JavaScript.</p>
+                </div>
+              </div>
+        </div>
+        <div class="slide d-flex justify-content-center align-items-center" style="height: 300px;">
+
+            <div class="card" style="width: 30rem;">
+                <img src="../../assets/events/robotics.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h3 class="card-title">Coding Camp</h3>
+                  <p class="card-text">A week-long camp where kids learn the basics of coding through fun projects and games..</p>
+                </div>
+              </div>
+        </div>
+        <div class="slide d-flex justify-content-center align-items-center" style="height: 300px;">
+            <div class="card" style="width: 30rem;">
+                <img src="/src/assets/events/robotics.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h3 class="card-title">Robotics Workshop</h3>
+                  <p class="card-text">An interactive workshop where children build and program their own robots.</p>
+                </div>
+              </div>
+        </div>
+        <div class="slide d-flex justify-content-center align-items-center" style="height: 300px;">
+            <div class="card" style="width: 30rem;">
+                <img src="/src/assets/events/Games.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h3 class="card-title">Game Development Day</h3>
+                  <p class="card-text">A day dedicated to teaching kids how to create their own video games using simple programming languages.</p>
+                </div>
+              </div>
+        </div>
+        <div class="slide d-flex justify-content-center align-items-center" style="height: 300px;">
+            <div class="card" style="width: 30rem;">
+                <img src="/src/assets/events/appcreation.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h3 class="card-title">App Creation Challenge</h3>
+                  <p class="card-text">A competition where kids design and present their own apps.</p>
+                </div>
+              </div>
+        </div>
+        <div class="slide d-flex justify-content-center align-items-center" style="height: 300px;">
+            <div class="card" style="width: 30rem;">
+                <img src="/src/assets/events/night.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h3 class="card-title">Family Coding Night</h3>
+                  <p class="card-text">An event where families can come together to learn coding basics and work on projects.</p>
+                </div>
+              </div>
+        </div>
+        <div class="slide d-flex justify-content-center align-items-center" style="height: 300px;">
+            <div class="card" style="width: 30rem;">
+                <img src="/src/assets/events/fair.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h3 class="card-title">Tech Fair</h3>
+                  <p class="card-text">An event showcasing projects created by kids, with booths where they can demonstrate their work.</p>
+                </div>
+              </div>
+        </div>
+    </div>
+
+
+    <!-- Single Next and Previous buttons -->
+    <button class="prev" (click)="prevSlide()">&#10094;</button>
+    <button class="next" (click)="nextSlide()">&#10095;</button>
+</div>
+
+
+
+<div class="container">
+  <h2>What parents are saying</h2>
+</div>
+
+
+
+<div class="carousel">
+  <input type="radio" name="slides" id="slide8" checked>
+  <input type="radio" name="slides" id="slide9">
+  <input type="radio" name="slides" id="slide10">
+  <input type="radio" name="slides" id="slide11">
+  <input type="radio" name="slides" id="slide12">
+  
+  <div class="slides">
+      <div class="slide d-flex justify-content-center align-items-center" style="height: 300px;" *ngFor="let user of userData">
+          <div class="card" style="width: 30rem;">
+              <img [src]="user.photo" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h3 class="card-title">{{user.user_name}}</h3>
+                <p class="card-text">{{user.comments}}</p>
+              </div>
+            </div>
+      </div>
+  </div>
+
+  
+
+  <!-- Single Next and Previous buttons -->
+  <button class="prev" (click)="prevSlide()">&#10094;</button>
+  <button class="next" (click)="nextSlide()">&#10095;</button>
+</div>
+
