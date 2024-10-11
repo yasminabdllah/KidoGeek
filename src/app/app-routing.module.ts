@@ -7,6 +7,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { BlogComponent } from './blog/blog.component';
 import { CourseComponent } from './course/course.component';
 import { CommunityComponent } from './community/community.component';
+import { MaincoursesComponent } from './course/maincourses/maincourses.component';
+import { RegisterComponent } from './register/register.component';
 
 
 const routes: Routes = [
@@ -17,6 +19,8 @@ const routes: Routes = [
   { path: 'courses', component: CourseComponent,title:'courses' },
   { path: 'blog', component: BlogComponent,title:'blog' },
   { path: 'community', component: CommunityComponent,title:'community' },
+  { path: 'maincourses', component: MaincoursesComponent,title:'maincourses' },
+  { path: 'register', component: RegisterComponent,title:'register' },
   { path: '**', component: NotFoundComponent ,title:'Error'},
 ];
 

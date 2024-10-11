@@ -8,4 +8,5 @@ export interface Course {
   category: string;
   videos: number;
   photo: string;
+  price:number
 }

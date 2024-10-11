@@ -14,10 +14,16 @@ import { CourseComponent } from './course/course.component';
 import { TopHeaderComponent } from './top-header/top-header.component';
 import { QuesBlogComponent } from './blog/ques-blog/ques-blog.component';
 import { BlogCardComponent } from './blog/blog-card/blog-card.component';
+import { MaincoursesComponent } from './course/maincourses/maincourses.component';
+import { CoursecatigoryComponent } from './course/coursecatigory/coursecatigory.component';
+import { SearchPipe } from './search.pipe';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RegisterComponent } from './register/register.component';
+import { RouterModule, Routes } from '@angular/router';
 
 
 
-@NgModule({
+@NgModule({ 
   declarations: [
     AppComponent,
     HeaderComponent,
@@ -31,11 +37,22 @@ import { BlogCardComponent } from './blog/blog-card/blog-card.component';
     TopHeaderComponent,
     QuesBlogComponent,
     BlogCardComponent,
+    MaincoursesComponent,
+    CoursecatigoryComponent,
+    SearchPipe,
+    RegisterComponent,
+   
+    
 
   ],
+ 
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    RouterModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
