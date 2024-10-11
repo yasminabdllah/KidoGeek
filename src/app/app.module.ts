@@ -17,6 +17,7 @@ import { BlogCardComponent } from './blog/blog-card/blog-card.component';
 import { SearchComponent } from './search/search.component';
 import { SearchResultComponent } from './search/search-result/search-result.component';
 import { FormsModule } from '@angular/forms';
+import { ProfileComponent } from './profile/profile.component';
 
 
 
@@ -36,6 +37,7 @@ import { FormsModule } from '@angular/forms';
     BlogCardComponent,
     SearchComponent,
     SearchResultComponent,
+    ProfileComponent,
 
   ],
   imports: [
