@@ -1,32 +1,46 @@
-import { Component } from '@angular/core'; 
+import { Component } from '@angular/core';
 import { UsersService } from '../../services/users.service';
 import { User } from '../../interfaces/user.interface';
 
 @Component({
   selector: 'app-community',
   templateUrl: './community.component.html',
-  styleUrl: './community.component.css'
+  styleUrls: ['./community.component.css']
 })
-export class CommunityComponent  {
-  constructor (private user:UsersService) {
-    this.userData = user.users_data
+export class CommunityComponent {
+  userData: User[] = [];
+  currentIndexMap: { [key: string]: number } = { 'slides1': 0, 'slides2': 0 };
+
+  slidesMap: { [key: string]: string[] } = {
+    'slides1': ['slide1', 'slide2', 'slide3', 'slide4', 'slide5', 'slide6', 'slide7'],
+    'slides2': ['slide8', 'slide9', 'slide10', 'slide11', 'slide12', 'slide13', 'slide14', 'slide15', 'slide16', 'slide17']
+  };
+
+  constructor(private userService: UsersService) {
+    this.userData = this.userService.users_data;
   }
-  userData: User[]=[]
-  currentIndex: number = 0;
-    slides: string[] = ['slide1', 'slide2', 'slide3', 'slide4', 'slide5', 'slide6', 'slide7'];
 
-    nextSlide() {
-        this.currentIndex = (this.currentIndex + 1) % this.slides.length;
-        this.updateRadioButton();
-    }
+  // Navigate to the next slide
+  nextSlide(slidesName: string) {
+    const slides = this.slidesMap[slidesName];
+    this.currentIndexMap[slidesName] = (this.currentIndexMap[slidesName] + 1) % slides.length;
+    this.updateRadioButton(slidesName);
+  }
 
-    prevSlide() {
-        this.currentIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length;
-        this.updateRadioButton();
-    }
+  // Navigate to the previous slide
+  prevSlide(slidesName: string) {
+    const slides = this.slidesMap[slidesName];
+    this.currentIndexMap[slidesName] = (this.currentIndexMap[slidesName] - 1 + slides.length) % slides.length;
+    this.updateRadioButton(slidesName);
+  }
 
-    private updateRadioButton() {
-        const radios = document.getElementsByName('slides') as NodeListOf<HTMLInputElement>;
-        radios[this.currentIndex].checked = true;
+  // Update the radio button selection when navigating slides
+  private updateRadioButton(slidesName: string) {
+    const radios = document.getElementsByName(slidesName) as NodeListOf<HTMLInputElement>;
+    if (radios && radios.length > 0) {
+      radios.forEach((radio, index) => {
+        radio.checked = (index === this.currentIndexMap[slidesName]);
+      });
     }
+  }
 }

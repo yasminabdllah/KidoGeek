@@ -2,20 +2,18 @@
 <div class="container">
   <h2>Our Events</h2>
 </div>
-  
-
 
 <div class="carousel">
-    <input type="radio" name="slides" id="slide1" checked>
-    <input type="radio" name="slides" id="slide2">
-    <input type="radio" name="slides" id="slide3">
-    <input type="radio" name="slides" id="slide4">
-    <input type="radio" name="slides" id="slide5">
-    <input type="radio" name="slides" id="slide6">
-    <input type="radio" name="slides" id="slide7">
+  <input type="radio" name="slides1" id="slide1" checked>
+  <input type="radio" name="slides1" id="slide2">
+  <input type="radio" name="slides1" id="slide3">
+  <input type="radio" name="slides1" id="slide4">
+  <input type="radio" name="slides1" id="slide5">
+  <input type="radio" name="slides1" id="slide6">
+  <input type="radio" name="slides1" id="slide7">
 
-    <div class="slides">
-        <div class="slide d-flex justify-content-center align-items-center" style="height: 300px;">
+  <div class="slides">
+      <div class="slide d-flex justify-content-center align-items-center">
             <div class="card" style="width: 30rem;">
                 <img src="../../assets/events/coding.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -24,7 +22,7 @@
                 </div>
               </div>
         </div>
-        <div class="slide d-flex justify-content-center align-items-center" style="height: 300px;">
+        <div class="slide d-flex justify-content-center align-items-center">
 
             <div class="card" style="width: 30rem;">
                 <img src="../../assets/events/robotics.png" class="card-img-top" alt="...">
@@ -82,9 +80,9 @@
     </div>
 
 
-    <!-- Single Next and Previous buttons -->
-    <button class="prev" (click)="prevSlide()">&#10094;</button>
-    <button class="next" (click)="nextSlide()">&#10095;</button>
+
+    <button class="prev" (click)="prevSlide('slides1')">&#10094;</button>
+    <button class="next" (click)="nextSlide('slides1')">&#10095;</button>
 </div>
 
 
@@ -95,29 +93,32 @@
 
 
 
+<!-- Second Carousel -->
 <div class="carousel">
-  <input type="radio" name="slides" id="slide8" checked>
-  <input type="radio" name="slides" id="slide9">
-  <input type="radio" name="slides" id="slide10">
-  <input type="radio" name="slides" id="slide11">
-  <input type="radio" name="slides" id="slide12">
-  
+  <input type="radio" name="slides2" id="slide8" checked>
+  <input type="radio" name="slides2" id="slide9">
+  <input type="radio" name="slides2" id="slide10">
+  <input type="radio" name="slides2" id="slide11">
+  <input type="radio" name="slides2" id="slide12">
+  <input type="radio" name="slides2" id="slide13">
+  <input type="radio" name="slides2" id="slide14">
+  <input type="radio" name="slides2" id="slide15">
+  <input type="radio" name="slides2" id="slide16">
+  <input type="radio" name="slides2" id="slide17">
+
   <div class="slides">
-      <div class="slide d-flex justify-content-center align-items-center" style="height: 300px;" *ngFor="let user of userData">
-          <div class="card" style="width: 30rem;">
-              <img [src]="user.photo" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h3 class="card-title">{{user.user_name}}</h3>
-                <p class="card-text">{{user.comments}}</p>
-              </div>
-            </div>
+    <div class="slide d-flex justify-content-center align-items-center" *ngFor="let user of userData">
+      <div class="card" style="width: 30rem;">
+        <img [src]="user.photo" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">{{user.user_name}}</h3>
+          <p class="card-text">{{user.comments}}</p>
+        </div>
       </div>
+    </div>
   </div>
 
-  
-
-  <!-- Single Next and Previous buttons -->
-  <button class="prev" (click)="prevSlide()">&#10094;</button>
-  <button class="next" (click)="nextSlide()">&#10095;</button>
+  <!-- Navigation buttons for the second carousel -->
+  <button class="prev" (click)="prevSlide('slides2')">&#10094;</button>
+  <button class="next" (click)="nextSlide('slides2')">&#10095;</button>
 </div>
-
