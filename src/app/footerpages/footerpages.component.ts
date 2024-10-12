@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './footerpages.component.css'
 })
 export class FooterpagesComponent {
-
+  navigateToPath(path : string) {
+    window.location.href = path;
+  }
 }

@@ -9,11 +9,10 @@
       <p><strong>Price:</strong> ${{ course.price }}</p>
       <button type="button" *ngIf="!checkCart(i)" (click)="addToCart(i)">Add To Cart</button>
       <button type="button" *ngIf="checkCart(i)" (click)="removeFromCart(i)">Remove from Cart</button>
+      <button type="button" (click)="navigateToPath('courseDetail')">course-detail</button>
     </div>
   </div>
-
 </div>
-
 <div *ngIf="cours_data_after_search.length === 0">
   <div>
     <h1>No Found Data For => {{searchText}}</h1>

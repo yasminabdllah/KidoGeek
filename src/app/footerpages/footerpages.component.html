@@ -3,23 +3,32 @@
     <div class="section">
       <div>
         <img src="../../assets/Logo.svg" alt="logo" class="logo">
-        <p class="para">Konec sit amet nibh vestibulum ipsum cursus rhoncus. Duis ac tortor gravida ligula eleifend finibus sed vel
+        <p class="para">Konec sit amet nibh vestibulum ipsum cursus rhoncus. Duis ac tortor gravida ligula eleifend
+          finibus sed vel
           tellus.</p>
       </div>
       <div class="social">
         <h4>Social Media</h4>
-        <ul>
+        <ul class="social-links">
           <li>
-            <i class="fa-brands fa-facebook icon"></i>
+            <a (click)="navigateToPath('https://www.facebook.com')">
+              <i class="fa-brands fa-facebook icon"></i>
+            </a>
           </li>
           <li>
-            <i class="fa-brands fa-linkedin icon"></i>
+            <a (click)="navigateToPath('https://www.linkedin.com')">
+              <i class="fa-brands fa-linkedin icon"></i>
+            </a>
           </li>
           <li>
-            <i class="fa-brands fa-twitter icon"></i>
+            <a (click)="navigateToPath('https://www.twitter.com')">
+              <i class="fa-brands fa-twitter icon"></i>
+            </a>
           </li>
           <li>
-            <i class="fa-brands fa-instagram icon"></i>
+            <a (click)="navigateToPath('https://www.instagram.com')">
+              <i class="fa-brands fa-instagram icon"></i>
+            </a>
           </li>
         </ul>
       </div>

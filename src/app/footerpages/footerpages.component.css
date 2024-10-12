@@ -25,7 +25,17 @@
 .social ul{
   display: flex;
   list-style: none;
-  gap: 0px 15px ;
+}
+.social-links i{
+  cursor: pointer;
+  font-size: large;
+  color: #eee;
+  margin-right: 10px;
+  transition: all ease 0.5s;
+}
+.social-links i:hover{
+  color: #FFAE62;
+  font-size: larger;
 }
 form{
   display: flex;

@@ -1,34 +1,48 @@
-<div class="cart">
-  <h3>Your cart</h3>
-  <p *ngIf="cartItems.length === 0">Your cart is currently empty.</p>
-  <button class="btn bttn">Find Your Course</button>
+<div class="container">
+
+  <div class="cart">
+    <h3>Your cart</h3>
+    <p *ngIf="cartItems.length === 0">Your cart is currently empty.</p>
+    <button class="btn bttn" (click)="navigateToPath('/search')">Find Your Course</button>
 
 
-  <div>
-    <table class="table">
-      <thead class="thead-light">
-        <tr>
-          <th scope="col">Course</th>
-          <th scope="col"></th>
-          <th scope="col">Price</th>
-        </tr>
-      </thead>
-      <tbody *ngFor="let item of cartItems; let i = index">
-        <tr>
-          <td>{{item.photo}}</td>
-          <td>
-            <div>
-              <p>{{item.title}}</p>
-              <p>{{item.category}}</p>
-              <button type="button" (click)="removeFromCart(i)">Remove</button>
-            </div>
-          </td>
-          <td>{{item.price}}</td>
-        </tr>
-      </tbody>
-    </table>
+    <div *ngIf="cartItems.length > 0">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Course</th>
+            <th scope="col"></th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let item of cartItems; let i = index">
+          <tr>
+            <td>{{item.photo}}</td>
+            <td>
+              <div class="info_course">
+                <p class="fw-bolder">{{item.title}}</p>
+                <p>{{item.category}}</p>
+                <button type="button" (click)="removeFromCart(i)">Remove</button>
+              </div>
+            </td>
+            <td class="fs-5 fw-bolder">${{item.price}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="my-4">
+      <p class="fs-4">Total: ${{totalPrice()}}</p>
+    </div>
+    <div class="next_pages mb-5">
+      <button type="button" class=" btn bttn" (click)="navigateToPath('courses')">
+        <i class="fa-solid fa-arrow-left"></i>
+        Back To Courses
+      </button>
+      <button type="button" class=" btn bttn" (click)="navigateToPath('checkOut')">
+        Check Out
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
   </div>
-  <div>
-    <p class="fs-4">Total: ${{totalPrice()}}</p>
-  </div>
+
 </div>

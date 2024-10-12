@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+
+//Our Commponents
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterpagesComponent } from './footerpages/footerpages.component';
@@ -17,7 +19,11 @@ import { BlogCardComponent } from './blog/blog-card/blog-card.component';
 import { SearchComponent } from './search/search.component';
 import { SearchResultComponent } from './search/search-result/search-result.component';
 import { CartComponent } from './cart/cart.component';
-import { FormsModule } from '@angular/forms';
+import { ProfileComponent } from './profile/profile.component';
+import { CourseDetailComponent } from './course-detail/course-detail.component';
+import { PaymentComponent } from './payment/payment.component';
+
+
 
 
 
@@ -37,7 +43,10 @@ import { FormsModule } from '@angular/forms';
     BlogCardComponent,
     SearchComponent,
     SearchResultComponent,
-    CartComponent
+    CartComponent,
+    ProfileComponent,
+    CourseDetailComponent,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,

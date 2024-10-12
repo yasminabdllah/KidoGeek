@@ -6,7 +6,9 @@ import { Course } from '../interfaces/course.interface';
 })
 export class CartServiceService {
 
-  constructor() { }
+  constructor() {
+    this.getCartsData;
+  }
   courses_cart : Course[] =[];
 
   getCartsData(){
@@ -25,7 +27,7 @@ export class CartServiceService {
   }
 
   numOfCourses(){
-    return this.courses_cart.length;
+    return this.getCartsData().length;
   }
 
   removeFromCart(index: number){
