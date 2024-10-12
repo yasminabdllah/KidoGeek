@@ -37,7 +37,7 @@ export class RegisterComponent {
     else{
      this.confirmation_Error = false;
    
-     this.userRgisterData = {
+    this.userRgisterData = {
     id: this.Id,
     user_name: this.registerForm.get('user_name')?.value,
     password: this.registerForm.get('password')?.value,
@@ -45,6 +45,9 @@ export class RegisterComponent {
     age: this.registerForm.get('age')?.value,
     enrolled: [],
     progress: [],
+    email: this.registerForm.get('email')?.value,
+    photo: '',
+    comments:[], 
   };
   
     this._UsersService.users_data.push(this.userRgisterData)
