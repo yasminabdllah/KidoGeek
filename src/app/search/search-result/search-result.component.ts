@@ -2,6 +2,7 @@ import { CartServiceService } from './../../../services/cart-service.service';
 import { Course } from '../../../interfaces/course.interface';
 import { CoursesService } from './../../../services/courses.service';
 import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-search-result',
@@ -15,7 +16,7 @@ export class SearchResultComponent implements OnInit, OnChanges {
   cours_data_after_search: Course[] = [];
   inCart: boolean[]= [];
 
-  constructor(private Courses: CoursesService, private Cart: CartServiceService) {
+  constructor(private Courses: CoursesService, private Cart: CartServiceService ,private router:Router) {
     this.courses_data = Courses.courses_data;
   }
 
@@ -41,7 +42,6 @@ export class SearchResultComponent implements OnInit, OnChanges {
     }
   }
 
-
   addToCart(index: number) {
     const course = this.cours_data_after_search[index]
     this.Cart.addToCart(course);
@@ -58,5 +58,10 @@ export class SearchResultComponent implements OnInit, OnChanges {
       cart_data.some(cartCourse => cartCourse.course_id === course.course_id) // Assuming each course has a unique id
     );
     return this.inCart[index];
+  }
+
+
+  navigateToPath(path:string){
+    this.router.navigate([path]);
   }
 }

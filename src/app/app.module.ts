@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+
+//Our Commponents
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterpagesComponent } from './footerpages/footerpages.component';
@@ -17,12 +19,15 @@ import { BlogCardComponent } from './blog/blog-card/blog-card.component';
 import { MaincoursesComponent } from './course/maincourses/maincourses.component';
 import { CoursecatigoryComponent } from './course/coursecatigory/coursecatigory.component';
 import { SearchPipe } from './search.pipe';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {  ReactiveFormsModule } from '@angular/forms';
 import { RegisterComponent } from './register/register.component';
 import { RouterModule, Routes } from '@angular/router';
 import { SearchComponent } from './search/search.component';
 import { SearchResultComponent } from './search/search-result/search-result.component';
 import { CartComponent } from './cart/cart.component';
+import { ProfileComponent } from './profile/profile.component';
+import { CourseDetailComponent } from './course-detail/course-detail.component';
+import { PaymentComponent } from './payment/payment.component';
 
 
 
@@ -50,7 +55,10 @@ import { CartComponent } from './cart/cart.component';
 
     SearchComponent,
     SearchResultComponent,
-    CartComponent
+    CartComponent,
+    ProfileComponent,
+    CourseDetailComponent,
+    PaymentComponent
   ],
  
   imports: [

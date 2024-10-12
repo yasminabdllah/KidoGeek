@@ -1,32 +1,35 @@
-import { Component } from '@angular/core'; 
+import { Component } from '@angular/core';
 import { UsersService } from '../../services/users.service';
 import { User } from '../../interfaces/user.interface';
 
 @Component({
   selector: 'app-community',
   templateUrl: './community.component.html',
-  styleUrl: './community.component.css'
+  styleUrls: ['./community.component.css']
 })
-export class CommunityComponent  {
-  constructor (private user:UsersService) {
-    this.userData = user.users_data
+export class CommunityComponent {
+  userData: User[] = [];
+  constructor(private userService: UsersService) {
+    this.userData = this.userService.users_data;
   }
-  userData: User[]=[]
-  currentIndex: number = 0;
-    slides: string[] = ['slide1', 'slide2', 'slide3', 'slide4', 'slide5', 'slide6', 'slide7'];
 
-    nextSlide() {
-        this.currentIndex = (this.currentIndex + 1) % this.slides.length;
-        this.updateRadioButton();
-    }
+  pageSize = 2;
+  currentPage = 1;
+  paginateduser: User[]=[];
 
-    prevSlide() {
-        this.currentIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length;
-        this.updateRadioButton();
-    }
 
-    private updateRadioButton() {
-        const radios = document.getElementsByName('slides') as NodeListOf<HTMLInputElement>;
-        radios[this.currentIndex].checked = true;
-    }
+  ngOnInit() {
+    this.setPage(1);
+  }
+
+  get totalPages() {
+    return Array(Math.ceil(this.userData.length / this.pageSize)).
+    fill(0).map((x, i) => i + 1);
+  }
+
+  setPage(page: number) {
+    this.currentPage = page;
+    const startIndex = (page - 1) * this.pageSize;
+    this.paginateduser = this.userData.slice(startIndex, startIndex + this.pageSize);
+  }
 }

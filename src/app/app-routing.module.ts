@@ -12,6 +12,8 @@ import { RegisterComponent } from './register/register.component';
 import { SearchComponent } from './search/search.component';
 import { CartComponent } from './cart/cart.component';
 import { CoursecatigoryComponent } from './course/coursecatigory/coursecatigory.component';
+import { CourseDetailComponent } from './course-detail/course-detail.component';
+import { PaymentComponent } from './payment/payment.component';
 
 
 const routes: Routes = [
@@ -27,6 +29,8 @@ const routes: Routes = [
   { path: 'community', component: CommunityComponent, title: 'community' },
   { path: 'search', component: SearchComponent, title: 'search' },
   { path: 'Cart', component: CartComponent, title: 'cart' },
+  { path: 'courseDetail', component: CourseDetailComponent, title: 'course Details' },
+  { path: 'checkOut', component: PaymentComponent, title: 'Check Out' },
   { path: '**', component: NotFoundComponent, title: 'Error' },
 ];
 
