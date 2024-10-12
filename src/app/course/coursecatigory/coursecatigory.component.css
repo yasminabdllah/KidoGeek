@@ -13,6 +13,7 @@ img{
 }
 p{
     color:  rgb(110, 110, 110);
+    font-size:0.7rem;
 }
 .main-card:hover{
     box-shadow: #dadada 0px 2px 2px 0px;
@@ -42,4 +43,7 @@ button{
     border-radius: 1.6rem;
     padding: 0.5rem 1.6rem 0.5rem 1.6rem;
 }
-
+.hover img:hover{
+    scale:1.1;
+    transition:all ease 0.7;
+}
