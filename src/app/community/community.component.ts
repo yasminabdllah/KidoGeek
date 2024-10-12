@@ -9,38 +9,27 @@ import { User } from '../../interfaces/user.interface';
 })
 export class CommunityComponent {
   userData: User[] = [];
-  currentIndexMap: { [key: string]: number } = { 'slides1': 0, 'slides2': 0 };
-
-  slidesMap: { [key: string]: string[] } = {
-    'slides1': ['slide1', 'slide2', 'slide3', 'slide4', 'slide5', 'slide6', 'slide7'],
-    'slides2': ['slide8', 'slide9', 'slide10', 'slide11', 'slide12', 'slide13', 'slide14', 'slide15', 'slide16', 'slide17']
-  };
-
   constructor(private userService: UsersService) {
     this.userData = this.userService.users_data;
   }
 
-  // Navigate to the next slide
-  nextSlide(slidesName: string) {
-    const slides = this.slidesMap[slidesName];
-    this.currentIndexMap[slidesName] = (this.currentIndexMap[slidesName] + 1) % slides.length;
-    this.updateRadioButton(slidesName);
+  pageSize = 2;
+  currentPage = 1;
+  paginateduser: User[]=[];
+
+
+  ngOnInit() {
+    this.setPage(1);
   }
 
-  // Navigate to the previous slide
-  prevSlide(slidesName: string) {
-    const slides = this.slidesMap[slidesName];
-    this.currentIndexMap[slidesName] = (this.currentIndexMap[slidesName] - 1 + slides.length) % slides.length;
-    this.updateRadioButton(slidesName);
+  get totalPages() {
+    return Array(Math.ceil(this.userData.length / this.pageSize)).
+    fill(0).map((x, i) => i + 1);
   }
 
-  // Update the radio button selection when navigating slides
-  private updateRadioButton(slidesName: string) {
-    const radios = document.getElementsByName(slidesName) as NodeListOf<HTMLInputElement>;
-    if (radios && radios.length > 0) {
-      radios.forEach((radio, index) => {
-        radio.checked = (index === this.currentIndexMap[slidesName]);
-      });
-    }
+  setPage(page: number) {
+    this.currentPage = page;
+    const startIndex = (page - 1) * this.pageSize;
+    this.paginateduser = this.userData.slice(startIndex, startIndex + this.pageSize);
   }
 }

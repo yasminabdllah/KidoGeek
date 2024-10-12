@@ -1,91 +1,72 @@
-
 <div class="container">
   <h2>Our Events</h2>
 </div>
 
-<div class="carousel">
-  <input type="radio" name="slides1" id="slide1" checked>
-  <input type="radio" name="slides1" id="slide2">
-  <input type="radio" name="slides1" id="slide3">
-  <input type="radio" name="slides1" id="slide4">
-  <input type="radio" name="slides1" id="slide5">
-  <input type="radio" name="slides1" id="slide6">
-  <input type="radio" name="slides1" id="slide7">
-
-  <div class="slides">
-      <div class="slide d-flex justify-content-center align-items-center">
-            <div class="card" style="width: 30rem;">
-                <img src="../../assets/events/coding.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h3 class="card-title">Interactive Coding Classes</h3>
-                  <p class="card-text"> classes where kids learn programming languages like Scratch, Python, or JavaScript.</p>
-                </div>
-              </div>
-        </div>
-        <div class="slide d-flex justify-content-center align-items-center">
-
-            <div class="card" style="width: 30rem;">
-                <img src="../../assets/events/robotics.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h3 class="card-title">Coding Camp</h3>
-                  <p class="card-text">A week-long camp where kids learn the basics of coding through fun projects and games..</p>
-                </div>
-              </div>
-        </div>
-        <div class="slide d-flex justify-content-center align-items-center" style="height: 300px;">
-            <div class="card" style="width: 30rem;">
-                <img src="/src/assets/events/robotics.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h3 class="card-title">Robotics Workshop</h3>
-                  <p class="card-text">An interactive workshop where children build and program their own robots.</p>
-                </div>
-              </div>
-        </div>
-        <div class="slide d-flex justify-content-center align-items-center" style="height: 300px;">
-            <div class="card" style="width: 30rem;">
-                <img src="/src/assets/events/Games.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h3 class="card-title">Game Development Day</h3>
-                  <p class="card-text">A day dedicated to teaching kids how to create their own video games using simple programming languages.</p>
-                </div>
-              </div>
-        </div>
-        <div class="slide d-flex justify-content-center align-items-center" style="height: 300px;">
-            <div class="card" style="width: 30rem;">
-                <img src="/src/assets/events/appcreation.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h3 class="card-title">App Creation Challenge</h3>
-                  <p class="card-text">A competition where kids design and present their own apps.</p>
-                </div>
-              </div>
-        </div>
-        <div class="slide d-flex justify-content-center align-items-center" style="height: 300px;">
-            <div class="card" style="width: 30rem;">
-                <img src="/src/assets/events/night.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h3 class="card-title">Family Coding Night</h3>
-                  <p class="card-text">An event where families can come together to learn coding basics and work on projects.</p>
-                </div>
-              </div>
-        </div>
-        <div class="slide d-flex justify-content-center align-items-center" style="height: 300px;">
-            <div class="card" style="width: 30rem;">
-                <img src="/src/assets/events/fair.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h3 class="card-title">Tech Fair</h3>
-                  <p class="card-text">An event showcasing projects created by kids, with booths where they can demonstrate their work.</p>
-                </div>
-              </div>
-        </div>
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+      aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../../assets/events/night.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Interactive Coding Classes</h5>
+        <p>classes where kids learn programming languages like Scratch, Python, or JavaScript.</p>
+      </div>
     </div>
-
-
-
-    <button class="prev" (click)="prevSlide('slides1')">&#10094;</button>
-    <button class="next" (click)="nextSlide('slides1')">&#10095;</button>
+    <div class="carousel-item">
+      <img src="../../assets/events/coding.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Coding Camp</h5>
+        <p>A week-long camp where kids learn the basics of coding through fun projects and games.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../../assets/events/robotics.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Robotics Workshop</h5>
+        <p>An interactive workshop where children build and program their own robots.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../../assets/events/Games.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Game Development Day</h5>
+        <p>A day dedicated to teaching kids how to create their own video games using simple
+          programming languages.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../../assets/events/appcreation.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>App Creation Challenge</h5>
+        <p>A competition where kids design and present their own apps.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../../assets/events/fair.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Tech Fair</h5>
+        <p>An event showcasing projects created by kids, with booths where they can demonstrate
+          their work.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
-
-
 
 <div class="container">
   <h2>What parents are saying</h2>
@@ -93,32 +74,71 @@
 
 
 
-<!-- Second Carousel -->
-<div class="carousel">
-  <input type="radio" name="slides2" id="slide8" checked>
-  <input type="radio" name="slides2" id="slide9">
-  <input type="radio" name="slides2" id="slide10">
-  <input type="radio" name="slides2" id="slide11">
-  <input type="radio" name="slides2" id="slide12">
-  <input type="radio" name="slides2" id="slide13">
-  <input type="radio" name="slides2" id="slide14">
-  <input type="radio" name="slides2" id="slide15">
-  <input type="radio" name="slides2" id="slide16">
-  <input type="radio" name="slides2" id="slide17">
+<!-- Second Carousel
+<div id="carouselExampleDark" class="carousel carousel-dark slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true"
+      aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7" aria-label="Slide 8"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="8" aria-label="Slide 9"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="9" aria-label="Slide 10"></button>
+  </div>
 
-  <div class="slides">
-    <div class="slide d-flex justify-content-center align-items-center" *ngFor="let user of userData">
-      <div class="card" style="width: 30rem;">
-        <img [src]="user.photo" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h3 class="card-title">{{user.user_name}}</h3>
-          <p class="card-text">{{user.comments}}</p>
-        </div>
+  <div class="carousel-inner">
+    <div class="carousel-item" *ngFor="let user of userData; let i = index" [ngClass]="{'active': i === 0}"
+      data-bs-interval="10000">
+      <img [src]="user.photo" class="photo" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>{{user.user_name}}</h5>
+        <p>{{user.comments}}</p>
       </div>
     </div>
   </div>
 
-  <!-- Navigation buttons for the second carousel -->
-  <button class="prev" (click)="prevSlide('slides2')">&#10094;</button>
-  <button class="next" (click)="nextSlide('slides2')">&#10095;</button>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div> -->
+
+
+
+<div class="d-flex justify-content-evenly flex-wrap my-4">
+  <div *ngFor="let user of paginateduser let i=index" class="card-scale my-3">
+    <div class="comment-Card">
+      <img [src]="user.photo" alt="comment">
+      <div class="card-info">
+        <div class="d-flex justify-content-between fw-bold ">
+          <p>{{user.email}}</p>
+          <p>
+            {{user.age}}
+          </p>
+        </div>
+        <h6 class="fw-bold">
+          {{user.user_name}}
+        </h6>
+        <p class="fw-bold">
+          {{user.comments}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <ul class="pagination pagination-sm justify-content-center">
+    <li class="page-item" *ngFor="let page of totalPages">
+      <a class="page-link links_sytyle" (click)="setPage(page)">{{ page }}</a>
+    </li>
+  </ul>
 </div>
