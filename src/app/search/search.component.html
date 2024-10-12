@@ -1,0 +1,19 @@
+<main>
+  <div class="search-course">
+    <input
+    class="search-course-input"
+    placeholder="Search for any course"
+    #inputValue
+  />
+  <button Class="btn btn-search" (click)="setSeachtextValue(inputValue)">
+    Search
+  </button>
+</div>
+<div class="search-result">
+  <p *ngIf="searchText != ''">
+    <strong>Search result for:</strong>
+    {{ searchText }}
+  </p>
+</div>
+<app-search-result *ngIf="searchText" [searchText]="searchText" ></app-search-result>
+</main>

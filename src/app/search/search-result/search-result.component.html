@@ -1,0 +1,21 @@
+<div *ngIf="cours_data_after_search.length > 0">
+
+  <div *ngFor="let course of cours_data_after_search; let i = index">
+    <div class="card course_style">
+      <h3>{{ course.title }}</h3>
+      <p>{{ course.description }}</p>
+      <p><strong>Instructor:</strong> {{ course.author }}</p>
+      <p><strong>Category:</strong> {{ course.category }}</p>
+      <p><strong>Price:</strong> ${{ course.price }}</p>
+      <button type="button" *ngIf="!checkCart(i)" (click)="addToCart(i)">Add To Cart</button>
+      <button type="button" *ngIf="checkCart(i)" (click)="removeFromCart(i)">Remove from Cart</button>
+    </div>
+  </div>
+
+</div>
+
+<div *ngIf="cours_data_after_search.length === 0">
+  <div>
+    <h1>No Found Data For => {{searchText}}</h1>
+  </div>
+</div>

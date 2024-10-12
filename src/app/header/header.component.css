@@ -1,19 +1,38 @@
-.main_header{
+.main_header {
   background-color: #fff;
   box-shadow: #eee 0 2px 2px 0;
 }
-.main_header nav{
+.main_header nav {
   padding: 0px;
 }
-.activeLink{
-  color: #FC800A !important;
+.activeLink {
+  color: #fc800a !important;
   text-decoration: underline;
 }
 
-.bttn{
-  border-radius: 20px;
-  box-shadow: #FC800A 0 0 4px 0.5px;
-  color: #FC800A;
+.btn {
+  border: none;
+}
+.btn_cart {
+  position: relative;
+  cursor: pointer;
+}
+.cart i {
+  font-size: 30px;
   margin-right: 10px;
-  font-size: 14px;
+  color: #cdcccc;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+.cart i:hover {
+  color: #5c5c5c;
+}
+.btn_cart span {
+  position: absolute;
+  top: -10px;
+  right: 15px;
+  background-color: #fc800a;
+  color: #fff;
+  padding: 0px 5px;
+  border-radius: 50%;
 }

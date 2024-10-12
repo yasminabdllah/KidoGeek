@@ -3,3 +3,56 @@
   padding: 10px;
   color: #fff;
 }
+.para{
+  width: 500px;
+}
+.footer-style{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.icon,h4 {
+  color: #FFAE62;
+}
+.bottom_footer{
+  background-color: #FFAE62;
+  padding: 5px 10px;
+}
+.copyRights{
+  width: 350px;
+}
+.social ul{
+  display: flex;
+  list-style: none;
+  gap: 0px 15px ;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input[type="text"],
+input[type="email"]{
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #eee;
+  color: #fff;
+  outline: none;
+}
+input[type="button"]{
+  background-color: transparent;
+  border: #eee;
+  color: #fff;
+  box-shadow: #FFAE62 0 0 4px 0.5px;
+  padding: 10px;
+  margin: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all ease 0.5s;
+}
+input[type="button"]:hover{
+  background-color: #FFAE62;
+  color: #171E45;
+  border-radius: 15px;
+}

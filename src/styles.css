@@ -9,11 +9,19 @@
 }
 
 .logo {
-  width: 120px;
-  height: 80px;
+  width: 130px;
+  height: 90px;
   margin-right: 10px;
 }
 main{
   background-color:rgb(255, 255, 254);
   margin: 0;
+}
+
+.bttn {
+  border-radius: 20px;
+  box-shadow: #fc800a 0 0 4px 0.5px;
+  color: #fc800a;
+  margin-right: 10px;
+  font-size: 14px;
 }

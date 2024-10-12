@@ -20,6 +20,10 @@ import { SearchPipe } from './search.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RegisterComponent } from './register/register.component';
 import { RouterModule, Routes } from '@angular/router';
+import { SearchComponent } from './search/search.component';
+import { SearchResultComponent } from './search/search-result/search-result.component';
+import { CartComponent } from './cart/cart.component';
+
 
 
 
@@ -44,6 +48,9 @@ import { RouterModule, Routes } from '@angular/router';
    
     
 
+    SearchComponent,
+    SearchResultComponent,
+    CartComponent
   ],
  
   imports: [
@@ -53,6 +60,7 @@ import { RouterModule, Routes } from '@angular/router';
     ReactiveFormsModule,
     RouterModule
    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
