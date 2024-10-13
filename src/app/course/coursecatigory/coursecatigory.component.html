@@ -1,0 +1,68 @@
+
+<div class="container">
+  
+    <div class="row">
+        
+            <div class="col-md-6 col-sm-10 mb-3"   *ngFor="let x of course_catigory" >
+                <a routerLink="/maincourses" (click)="filterCourses(x.Title)" >
+                <div class="card main-card p-3" >
+                    <img src={{x.photo}} class="card-img-top" alt="...">
+                    <div class="card-body mt-3">
+                      <span class="fw-semibold">
+                        {{x.raiting.length}}
+                      </span>  
+                      <span *ngFor="let n of x.raiting">&#9733;</span>
+                      <h5 class="card-title text-capitalize fw-semibold mt-4 mb-4">{{x.catigory}}</h5>
+                      <p class="card-text" style="height:7.5rem;  overflow: hidden;">{{x.describtion}}</p>
+        
+                      <div class="houres_color d-flex justify-content-between mt-3">
+                        <div class="fw-semibold" >
+                     
+                            &#9716; {{x.hours}} houres
+        
+                        </div>
+                        <div class="fw-semibold">
+                            🕮  {{x.age}}
+        
+                        </div>
+                      </div>
+                     
+                      
+                    </div>
+                    <div class="d-flex justify-content-end">
+                      <button class="btn btn-primary mt-4" (click)="filterCourses(x.Title)"> See more ->  </button> 
+                    </div>
+                </div>
+               </a>
+        
+            </div>
+            
+    </div>
+
+    <div class="row mt-3 mb-5 py-5 hover bg-success" >
+      <div class="col-md-4 col-sm-10  text-center ">
+        <img src="../../assets/AboutPhoto/cer1 (1).png">
+        <p class="py-4 text-light">
+          ACTIVITY HERO <br />
+          Best camps, classes and kids’ activities
+        </p>
+        
+      </div>
+      <div class="col-md-4 col-sm-10 text-center">
+        <img src="../../assets/AboutPhoto/cer1 (2).png">
+        <p class="py-4 text-light">
+          Parents’ Choice <br />
+          Gold Award for Best Coding Solution
+        </p>
+        
+      </div>
+      <div class="col-md-4 col-sm-10 text-center ">
+        <img src="../../assets/AboutPhoto/cer1 (3).png">
+        <p class="py-4 text-light">
+          TILLYWIG <br />
+          BrainChild Award for Best Coding Solution
+        </p>
+        
+      </div>
+    </div>
+</div>
