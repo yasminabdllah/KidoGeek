@@ -1,17 +1,37 @@
+
 h2 {
-    color:#198754;
-    font-size: 40px;
-    display: block;
-    margin: 10px;
-    font-style: bold;
-    text-align: center;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffc107;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 40px;
+  color: #fff; /* Corrected color code */
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  margin: 20px auto;
 }
-h3 {
-  color: #198754;
+h4 {
+  color:#198754;
+  font-size: 24px;
+  display: block;
+  margin: 10px;
+  font-style: bold;
+  text-align: center;
 }
+.container {
+  text-align: center; /* Center align the h2 inside the container */
+ 
+}
+.spacing {
+  margin-top: 60px; /* Adjust this value for the desired spacing */
+}
+
+
 .photo{
   position: relative;
-  left: 200px;
+  left: 450px;
 }
 
 .comment-Card{
@@ -42,3 +62,46 @@ h3 {
   cursor: pointer;
   color: #FC800A;
 }
+
+/* Set the carousel height and width */
+.carousel-inner {
+  max-height: 400px;  /* Adjust the height as needed */
+  overflow: hidden;   /* Prevent overflow */
+}
+
+/* Customize the caption text */
+.carousel-caption h5 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f1c40f;  /* Yellowish color for the headings */
+  padding-top: 20px; /* Adjust this value for more/less space */
+}
+
+.carousel-caption p {
+  font-size: 20px;
+  color: #ffffff;   /* White color for the paragraph text */
+}
+
+/* Control the carousel indicator colors */
+.carousel-indicators [data-bs-target] {
+  background-color: #f1c40f;  /* Yellowish indicator dots */
+}
+
+/* Change the style of the control buttons (Next and Previous) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #f1c40f;  /* Yellowish color for the control buttons */
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* Set the image width and height to maintain aspect ratio */
+.carousel-item img {
+  object-fit: cover;
+  width: 80%;
+  height: 400px;  /* Ensure image matches the carousel height */
+  
+}
+
+
+
