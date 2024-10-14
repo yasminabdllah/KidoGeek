@@ -22,8 +22,8 @@ export class RegisterComponent {
     user_name:new FormControl(null ,[Validators.minLength(6), Validators.required]),
     age:new FormControl(null ,[Validators.min(14), Validators.max(80), Validators.required]),
     email:new FormControl(null ,[Validators.email , Validators.required]),
-    password:new FormControl(null ,[Validators.pattern("[A-Z a-z]*"),Validators.minLength(8), Validators.required]),
-    confirm_password:new FormControl(null ,[Validators.pattern("[A-Z a-z]*"),Validators.minLength(8), Validators.required]),
+    password:new FormControl(null ,[Validators.pattern("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[A-Za-z\\d]{8,}$*") ,Validators.minLength(8), Validators.required]),
+    confirm_password:new FormControl(null ,[Validators.pattern("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[A-Za-z\\d]{8,}$*") ,Validators.minLength(8), Validators.required]),
   })
   
   confirmation_Error:boolean=false;
@@ -55,13 +55,14 @@ export class RegisterComponent {
    localStorage.setItem('allusers',JSON.stringify(local_data) );
    this.registerForm.reset()
    console.log(this._UsersService.users_data)
-   const allUsers = localStorage.getItem("allusers");
+   
+   const allUsers=localStorage.getItem("allusers");
    if (allUsers !== null) {
-     const usersArray = JSON.parse(allUsers);
-     console.log('Stored Users:', usersArray);
-     this._UsersService.users_data=usersArray;
-   }
-  
+       const usersArray = JSON.parse(allUsers);
+      console.log('Stored Users:', usersArray);
+      this._UsersService.users_data=usersArray;
+ }
+
 
     this.router.navigate(["/login"]);
 

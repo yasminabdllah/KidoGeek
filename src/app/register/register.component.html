@@ -18,10 +18,9 @@
                 <br>
                 <input type="text" formControlName="user_name" placeholder="type your full name">
                 <div *ngIf="registerForm.get('user_name')?.errors && registerForm.get('user_name')?.touched">
-                    
-                    <div class="alert bg-danger py-1 text-light m-0"  *ngIf="registerForm.get('user_name')?.getError('minLength')"> minimum length is 6 letters</div>
-                
+    
                     <div class="alert bg-danger py-1 text-light m-0" *ngIf="registerForm.get('user_name')?.getError('required')">this input is required </div>
+                    <div class="alert bg-danger py-1 text-light m-0"  *ngIf="registerForm.get('user_name')?.getError('minLength')"> minimum length is 6 letters</div>
                 </div>
                 <br>
                 <label for="age">age:<span>*</span></label>
