@@ -2,7 +2,7 @@
 h2 {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #ffc107;
+  background-color: #fc800a;
   border-radius: 50px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-size: 40px;
@@ -20,7 +20,7 @@ h4 {
   font-style: bold;
   text-align: center;
 }
-.container {
+div {
   text-align: center; /* Center align the h2 inside the container */
  
 }
@@ -79,7 +79,7 @@ h4 {
 
 .carousel-caption p {
   font-size: 20px;
-  color: #ffffff;   /* White color for the paragraph text */
+  color: #fff;   /* White color for the paragraph text */
 }
 
 /* Control the carousel indicator colors */
@@ -97,9 +97,12 @@ h4 {
 
 /* Set the image width and height to maintain aspect ratio */
 .carousel-item img {
-  object-fit: cover;
+  /*object-fit: cover;*/
   width: 80%;
-  height: 400px;  /* Ensure image matches the carousel height */
+  height: 400px; 
+  display:block;
+  margin-right: auto;
+  margin-left: auto;
   
 }
 
