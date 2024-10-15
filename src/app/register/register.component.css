@@ -13,8 +13,8 @@ body{
 
 }
 .background_photo{
-    background-image: url("c:/Users/youssef/Downloads/Recruitment Process Illustration concept_ A flat illustration isolated on white background.jfif");
-    /*background-image:url("../../assets/register photo/register.jfif");*/
+    /*background-image: url("c:/Users/youssef/Downloads/Recruitment Process Illustration concept_ A flat illustration isolated on white background.jfif");*/
+    background-image:url("../../assets/register photo/register.jfif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

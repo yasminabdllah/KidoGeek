@@ -6,6 +6,15 @@ import { User } from '../interfaces/user.interface';
 })
 export class UsersService {
   constructor() { }
+  private loggedIn: boolean = false; 
+
+  login(user: User): boolean {
+    const isAuthenticated = this.users_data.some(
+      users_data => users_data.email === user.email && users_data.password === user.password
+    );
+    this.loggedIn = isAuthenticated; 
+    return isAuthenticated;
+  }
   users_data: User[] = [
     {
       id: 1,
@@ -129,7 +138,11 @@ export class UsersService {
       comments: ["As a parent, I feel confident that my child is gaining valuable skills for the future in a safe and supportive environment."]
     }
   ]
+  isLoggedIn(): boolean {
+    return this.loggedIn;
+  }
 
- 
- 
+  getCurrentUser(email: string): User | null {
+    return this.users_data.find(user => user.email === email) || null;
+  }
 }

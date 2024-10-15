@@ -28,6 +28,7 @@ import { CartComponent } from './cart/cart.component';
 import { ProfileComponent } from './profile/profile.component';
 import { CourseDetailComponent } from './course-detail/course-detail.component';
 import { PaymentComponent } from './payment/payment.component';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -58,7 +59,8 @@ import { PaymentComponent } from './payment/payment.component';
     CartComponent,
     ProfileComponent,
     CourseDetailComponent,
-    PaymentComponent
+    PaymentComponent,
+    LoginComponent
   ],
  
   imports: [
