@@ -8,21 +8,22 @@ import { Router } from '@angular/router';
   templateUrl: './cart.component.html',
   styleUrl: './cart.component.css'
 })
-export class CartComponent implements OnInit,OnChanges{
+export class CartComponent implements OnInit{
   constructor(private cartService: CartServiceService , private router: Router){}
   cartItems :Course[]=[];
   total :number = 0;
   ngOnInit(): void {
-    this.cartItems = this.cartService.getCartsData();
+    this.loadCartItems();
   }
-  ngOnChanges(changes: SimpleChanges): void {
-    this.cartItems = this.cartService.getCartsData();
-  }
-  removeFromCart(index:number){
-    this.cartService.removeFromCart(index);
+  loadCartItems() {
     this.cartItems = this.cartService.getCartsData();
   }
 
+  removeFromCart(index:number){
+    const COURSE = this.cartItems[index];
+    this.cartService.removeFromCart(COURSE.course_id);
+    this.loadCartItems();
+  }
   totalPrice(){
     this.total=0;
     this.cartItems.forEach(c => {

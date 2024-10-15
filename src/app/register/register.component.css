@@ -1,58 +1,50 @@
-body{
-    background-color: white!important;
-
-
+body {
+  background-color: white !important;
 }
-.row{
-
-    margin-top: 50px;
-    margin-bottom: 100px;
-
-
-
-
+.row {
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
-.background_photo{
-    background-image: url("../../assets/register photo/register.jfif");
-    /*background-image:url("../../assets/register photo/register.jfif");*/
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: bisque;
-    height: 80vh;
-
-
+.background_photo {
+  background-image: url("../../assets/register photo/register.jfif");
+  /*background-image:url("../../assets/register photo/register.jfif");*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: bisque;
+  height: 80vh;
 }
-input{
-    width: 80%;
-    padding: 10px;
-    margin-bottom: 2px;
-    border: none;
-    margin-top: 2px;
-    border-bottom: 1px solid gray;
-    font-size: 12px;
+input {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 2px;
+  border: none;
+  margin-top: 2px;
+  border-bottom: 1px solid gray;
+  font-size: 12px;
 }
-label{
-    color: gray;
+label {
+  color: gray;
 }
-button{
-    background-color:#fd810d ;
-    color: white;
-    font-size: 14px;
-    margin-top: 5px;
+button {
+  background-color: #fd810d;
+  color: white;
+  font-size: 14px;
+  margin-top: 5px;
 }
-button:hover{
-
-    border: 1px solid #fd810d;
-    color: #fd810d;
+button:hover {
+  border: 1px solid #fd810d;
+  color: #fd810d;
 }
-span{
-    color: #fd810d;
+span {
+  color: #fd810d;
 }
-form{
-    display: block;
-    height: 90vh;
-    overflow: hidden;
+form {
+  display: block;
+  height: 90vh;
+  overflow: hidden;
 }
-h4{font-weight: 700;
-    color:black;}
+h4 {
+  font-weight: 700;
+  color: black;
+}

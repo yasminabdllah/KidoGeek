@@ -17,7 +17,7 @@
         </thead>
         <tbody *ngFor="let item of cartItems; let i = index">
           <tr>
-            <td>{{item.photo}}</td>
+            <td><img [src]="item.photo" class="photo" alt=""></td>
             <td>
               <div class="info_course">
                 <p class="fw-bolder">{{item.title}}</p>

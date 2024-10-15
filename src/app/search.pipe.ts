@@ -6,9 +6,8 @@ import { Course } from '../interfaces/course.interface';
 })
 export class SearchPipe implements PipeTransform {
 
-  transform(courses_data:Course[], term:string): any {
-
-    return courses_data.filter((course)=>course.title.toLocaleLowerCase().includes(term.toLocaleLowerCase()));
+  transform(courses_data: Course[], term: string): any {
+    return courses_data.filter((course) => course.title.toLocaleLowerCase().includes(term.toLocaleLowerCase()));
   }
 
 }

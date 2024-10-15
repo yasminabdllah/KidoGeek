@@ -1,6 +1,8 @@
 .payment_style{
   display: flex;
-  gap: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
 }
 .summary p{
   font-size: 15px;

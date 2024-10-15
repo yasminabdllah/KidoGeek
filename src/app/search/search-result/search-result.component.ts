@@ -45,11 +45,11 @@ export class SearchResultComponent implements OnInit, OnChanges {
   addToCart(index: number) {
     const course = this.cours_data_after_search[index]
     this.Cart.addToCart(course);
-    console.log(course)
   }
 
   removeFromCart(index:number){
-    this.Cart.removeFromCart(index)
+    const COURSE = this.cours_data_after_search[index]
+    this.Cart.removeFromCart(COURSE.course_id);
   }
 
   checkCart( index : number ){

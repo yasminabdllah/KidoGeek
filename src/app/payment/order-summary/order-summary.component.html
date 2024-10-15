@@ -1,0 +1,27 @@
+<div>
+  <div class="d-flex justify-content-around align-items-center">
+    <h5 class="fs-4 fw-bolder">Order summary</h5>
+    <button type="button" class="fw-bold fs-2 button_style" (click)="openSummary()">+</button>
+  </div>
+  <div  *ngIf="open_summary">
+    <div class="summary" *ngFor="let item of cartItems">
+      <div class="d-flex">
+        <img [src]="item.photo" alt="photo" class="photo">
+        <div>
+          <p class="fw-bolder">${{item.price}}</p>
+          <p class="my-1">{{item.title}}</p>
+          <p class="">{{item.author}}</p>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </div>
+  <div class="fw-bolder d-flex justify-content-evenly align-items-center">
+    <p class="fs-4 me-5">
+      Total : ${{totalPrice()}}
+    </p>
+    <button type="button" class=" btn bttn" (click)="navigateToPath('Cart')">
+      Edit
+    </button>
+  </div>
+</div>
