@@ -10,7 +10,7 @@ export class UsersService {
     {
       id: 1,
       user_name: 'Ali',
-      password: '123',
+      password: 'Ali123',
       role: 'student',
       age: 19,
       enrolled: [70, 50, 60],
@@ -22,7 +22,7 @@ export class UsersService {
     {
       id: 2,
       user_name: 'Fatima',
-      password: 'password123',
+      password: 'Password123',
       role: 'student',
       age: 17,
       enrolled: [70, 80],
@@ -34,7 +34,7 @@ export class UsersService {
     {
       id: 3,
       user_name: 'Mohamed',
-      password: 'pass456',
+      password: 'Pass456',
       role: 'student',
       age: 16,
       enrolled: [50, 60],
@@ -47,7 +47,7 @@ export class UsersService {
     {
       id: 4,
       user_name: 'Sara',
-      password: 'sara789',
+      password: 'Sara789',
       role: 'student',
       age: 18,
       enrolled: [70, 90, 60],
@@ -59,7 +59,7 @@ export class UsersService {
     {
       id: 5,
       user_name: 'Omar',
-      password: 'omar321',
+      password: 'Omar321',
       role: 'student',
       age: 19,
       enrolled: [80, 90],
@@ -71,7 +71,7 @@ export class UsersService {
     {
       id: 6,
       user_name: 'Layla',
-      password: 'layla543',
+      password: 'Layla543',
       role: 'student',
       age: 15,
       enrolled: [50, 60, 80],
@@ -83,7 +83,7 @@ export class UsersService {
     {
       id: 7,
       user_name: 'Hassan',
-      password: 'hassan007',
+      password: 'Hassan007',
       role: 'student',
       age: 20,
       enrolled: [60, 70],
@@ -95,7 +95,7 @@ export class UsersService {
     {
       id: 8,
       user_name: 'Nour',
-      password: 'nourpass',
+      password: 'Nourpass11',
       role: 'student',
       age: 17,
       enrolled: [50, 90],
@@ -106,7 +106,7 @@ export class UsersService {
     },
     {
       id: 9,
-      user_name: 'Khaled',
+      user_name: 'Khaled11',
       password: 'khaled999',
       role: 'student',
       age: 16,
@@ -118,7 +118,7 @@ export class UsersService {
     },
     {
       id: 10,
-      user_name: 'Mariam',
+      user_name: 'Mariam00',
       password: 'mariampass',
       role: 'student',
       age: 18,
@@ -129,6 +129,6 @@ export class UsersService {
       comments: ["As a parent, I feel confident that my child is gaining valuable skills for the future in a safe and supportive environment."]
     }
   ]
-
-
+  all_User_Data:any=[];
+  
 }

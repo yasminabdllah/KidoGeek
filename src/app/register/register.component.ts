@@ -14,16 +14,17 @@ import { Router } from '@angular/router';
 
 export class RegisterComponent {
   [x: string]: any;
-  constructor(private _UsersService:UsersService , private router: Router){}
   userRgisterData!: User;
+  constructor(private _UsersService:UsersService , private router: Router){}
+  
   Id:number=this._UsersService.users_data.length+1;
  
   registerForm:FormGroup=new FormGroup({
     user_name:new FormControl(null ,[Validators.minLength(6), Validators.required]),
     age:new FormControl(null ,[Validators.min(14), Validators.max(80), Validators.required]),
     email:new FormControl(null ,[Validators.email , Validators.required]),
-    password:new FormControl(null ,[Validators.pattern("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[A-Za-z\\d]{8,}$*") ,Validators.minLength(8), Validators.required]),
-    confirm_password:new FormControl(null ,[Validators.pattern("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[A-Za-z\\d]{8,}$*") ,Validators.minLength(8), Validators.required]),
+    password:new FormControl(null ,[Validators.pattern("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[A-Za-z\\d]{8,}$") , Validators.minLength(8), Validators.required]),
+    confirm_password:new FormControl(null ,[Validators.pattern("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[A-Za-z\\d]{8,}$") , Validators.minLength(8), Validators.required]),
   })
   
   confirmation_Error:boolean=false;
@@ -36,8 +37,8 @@ export class RegisterComponent {
     }
     else{
      this.confirmation_Error = false;
-   
-    this.userRgisterData = {
+     
+    this.userRgisterData= {
     id: this.Id,
     user_name: this.registerForm.get('user_name')?.value,
     password: this.registerForm.get('password')?.value,
@@ -50,6 +51,7 @@ export class RegisterComponent {
     comments:[], 
   };
   
+    
     this._UsersService.users_data.push(this.userRgisterData)
     const local_data=this._UsersService.users_data
    localStorage.setItem('allusers',JSON.stringify(local_data) );
@@ -58,9 +60,12 @@ export class RegisterComponent {
    
    const allUsers=localStorage.getItem("allusers");
    if (allUsers !== null) {
-       const usersArray = JSON.parse(allUsers);
+   
+    console.log(this._UsersService.users_data)
+      const usersArray = JSON.parse(allUsers);
       console.log('Stored Users:', usersArray);
-      this._UsersService.users_data=usersArray;
+      this._UsersService.all_User_Data=usersArray;
+      console.log(this._UsersService.all_User_Data)
  }
 
 
@@ -68,4 +73,5 @@ export class RegisterComponent {
 
  }
    }
-  }
+  
+   }

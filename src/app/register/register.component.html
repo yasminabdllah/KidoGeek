@@ -19,8 +19,8 @@
                 <input type="text" formControlName="user_name" placeholder="type your full name">
                 <div *ngIf="registerForm.get('user_name')?.errors && registerForm.get('user_name')?.touched">
     
-                    <div class="alert bg-danger py-1 text-light m-0" *ngIf="registerForm.get('user_name')?.getError('required')">this input is required </div>
-                    <div class="alert bg-danger py-1 text-light m-0"  *ngIf="registerForm.get('user_name')?.getError('minLength')"> minimum length is 6 letters</div>
+                    <div class="alert bg-danger py-1 text-light mb-1" *ngIf="registerForm.get('user_name')?.getError('required')">this input is required </div>
+                    <div class="alert bg-danger py-1 text-light mb-1"  *ngIf="registerForm.get('user_name')?.getError('minlength')"> minimum length is 6 letters</div>
                 </div>
                 <br>
                 <label for="age">age:<span>*</span></label>
@@ -28,9 +28,9 @@
                 <input type="number" formControlName="age" placeholder="type your first age">
                 <div *ngIf="registerForm.get('age')?.errors&&registerForm.get('age')?.touched">
                     
-                    <div class="alert bg-danger py-1 text-light m-0"  *ngIf="registerForm.get('age')?.getError('min')"> minimum age is 14</div>
-                    <div class="alert bg-danger py-1 text-light m-0"  *ngIf="registerForm.get('age')?.getError('max')"> maximum length is 80</div>
-                    <div class="alert bg-danger py-1 text-light m-0" *ngIf="registerForm.get('age')?.getError('required')">this input is required </div>
+                    <div class="alert bg-danger py-1 text-light mb-1"  *ngIf="registerForm.get('age')?.getError('min')"> minimum age is 14</div>
+                    <div class="alert bg-danger py-1 text-light mb-1"  *ngIf="registerForm.get('age')?.getError('max')"> maximum length is 80</div>
+                    <div class="alert bg-danger py-1 text-light mb-1" *ngIf="registerForm.get('age')?.getError('required')">this input is required </div>
                 </div>
                 
                 <br>
@@ -39,8 +39,8 @@
                 <input type="text" formControlName="email" placeholder="type your Email adress">
             
                 <div *ngIf="registerForm.get('email')?.errors&&registerForm.get('email')?.touched">
-                    <div class="alert bg-danger py-1 text-light m-0 " *ngIf="registerForm.get('email')?.getError('required')">this input is required </div>
-                    <div class="alert bg-danger py-1  text-light m-0"  *ngIf="registerForm.get('email')?.getError('email')"> Email is not valid</div>
+                    <div class="alert bg-danger py-1 text-light mb-1 " *ngIf="registerForm.get('email')?.getError('required')">this input is required </div>
+                    <div class="alert bg-danger py-1  text-light mb-1"  *ngIf="registerForm.get('email')?.getError('email')"> Email is not valid</div>
                     
                 </div>
             
@@ -50,9 +50,9 @@
                 <input type="password" formControlName="password" placeholder="type password">
             
                 <div *ngIf="registerForm.get('password')?.errors&&registerForm.get('password')?.touched">
-                    <div class="alert bg-danger py-1 text-light m-0 " *ngIf="registerForm.get('password')?.getError('required')">this input is required </div>
-                    <div class="alert bg-danger py-1  text-light m-0"  *ngIf="registerForm.get('password')?.getError('minLength')"> minimum length is 8</div>
-                    <div class="alert bg-danger py-1  text-light m-0"  *ngIf="registerForm.get('password')?.getError('pattern')"> password must start with capital letter</div>
+                    <div class="alert bg-danger py-1 text-light mb-1 " *ngIf="registerForm.get('password')?.getError('required')">this input is required </div>
+                    <div class="alert bg-danger py-1  text-light mb-1"  *ngIf="registerForm.get('password')?.getError('minlength')"> minimum length is 8</div>
+                    <div class="alert bg-danger py-1  text-light mb-1"  *ngIf="registerForm.get('password')?.getError('pattern')"> password must contain capital and small letters and degits</div>
                 </div>
               
                 <br>
@@ -61,9 +61,9 @@
                 <input type="password" formControlName="confirm_password" placeholder="confirm password">
             
                 <div *ngIf="registerForm.get('confirm_password')?.errors&&registerForm.get('confirm_password')?.touched ">
-                    <div class="alert bg-danger py-1 text-light m-0 " *ngIf="registerForm.get('confirm_password')?.getError('required')">this input is required </div>
-                    <div class="alert bg-danger py-1  text-light m-0"  *ngIf="registerForm.get('confirm_password')?.getError('minLength')"> minimum length is eight</div>
-                    <div class="alert bg-danger py-1  text-light m-0"  *ngIf="registerForm.get('confirm_password')?.getError('pattern')"> password must start with capital </div>
+                    <div class="alert bg-danger py-1 text-light mb-1 " *ngIf="registerForm.get('confirm_password')?.getError('required')">this input is required </div>
+                    <div class="alert bg-danger py-1  text-light mb-1"  *ngIf="registerForm.get('confirm_password')?.getError('minlength')"> minimum length is eight</div>
+                    <div class="alert bg-danger py-1  text-light mb-1"  *ngIf="registerForm.get('confirm_password')?.getError('pattern')"> password must contain capital and small letters and degits </div>
 
                 </div>
                 <br>
