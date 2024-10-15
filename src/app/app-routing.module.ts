@@ -15,6 +15,7 @@ import { CoursecatigoryComponent } from './course/coursecatigory/coursecatigory.
 import { CourseDetailComponent } from './course-detail/course-detail.component';
 import { PaymentComponent } from './payment/payment.component';
 import { LoginComponent } from './login/login.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 const routes: Routes = [
@@ -33,6 +34,7 @@ const routes: Routes = [
   { path: 'Cart', component: CartComponent, title: 'cart' },
   { path: 'course_detail', component: CourseDetailComponent, title: 'course_detail' },
   { path: 'checkOut', component: PaymentComponent, title: 'Check Out' },
+  { path: 'profile', component: ProfileComponent, title: 'profile' },
   { path: '**', component: NotFoundComponent, title: 'Error' },
 ];
 
