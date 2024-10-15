@@ -1,5 +1,7 @@
 <div class="container">
+<div>
   <h2>Our Events</h2>
+  <h4>"Join the fun! Our events bring coding to life with exciting workshops, camps, and challenges designed just for kids. Whether you're building robots or creating video games, every event is an adventure in learning!"</h4>
 </div>
 
 <div id="carouselExampleCaptions" class="carousel slide">
@@ -14,47 +16,45 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="../../assets/events/night.png" class="d-block w-100" alt="...">
+      <img src="../../assets/events/night.png" class="d-block w-50" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Interactive Coding Classes</h5>
-        <p>classes where kids learn programming languages like Scratch, Python, or JavaScript.</p>
+        <h3>Interactive Coding Classes</h3>
+        <h3>classes where kids learn programming <br>languages like Scratch, Python, or JavaScript.</h3>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="../../assets/events/coding.png" class="d-block w-100" alt="...">
+      <img src="../../assets/events/coding.png" class="d-block w-50" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Coding Camp</h5>
-        <p>A week-long camp where kids learn the basics of coding through fun projects and games.</p>
+        <h3>Coding Camp</h3>
+        <h3>A week-long camp where kids learn the basics <br>of coding through fun projects and games.</h3>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="../../assets/events/robotics.png" class="d-block w-100" alt="...">
+      <img src="../../assets/events/robotics.png" class="d-block w-50" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Robotics Workshop</h5>
-        <p>An interactive workshop where children build and program their own robots.</p>
+        <h3>Robotics Workshop</h3>
+        <h3>An interactive workshop where children <br>build and program their own robots.</h3>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="../../assets/events/Games.png" class="d-block w-100" alt="...">
+      <img src="../../assets/events/Games.png" class="d-block w-50" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Game Development Day</h5>
-        <p>A day dedicated to teaching kids how to create their own video games using simple
-          programming languages.</p>
+        <h3>Game Development Day</h3>
+        <h3>A day dedicated to teaching kids how to create their <br>own video games using simple programming languages.</h3>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="../../assets/events/appcreation.png" class="d-block w-100" alt="...">
+      <img src="../../assets/events/appcreation.png" class="d-block w-50" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>App Creation Challenge</h5>
-        <p>A competition where kids design and present their own apps.</p>
+        <h3>App Creation Challenge</h3>
+        <h3>A competition where kids design <br> and present their own apps.</h3>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="../../assets/events/fair.png" class="d-block w-100" alt="...">
+      <img src="../../assets/events/fair.png" class="d-block w-50" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Tech Fair</h5>
-        <p>An event showcasing projects created by kids, with booths where they can demonstrate
-          their work.</p>
+        <h3>Tech Fair</h3>
+        <h3>An event showcasing projects created by kids, with <br>booths where they can demonstrate their work.</h3>
       </div>
     </div>
   </div>
@@ -68,48 +68,13 @@
   </button>
 </div>
 
-<div class="container">
+<div class="container spacing">
   <h2>What parents are saying</h2>
+  <h4>"We love hearing from parents! This space is all about your thoughts,<br> feedback, and proud moments. Share your child's coding journey, and let’s celebrate their achievements together!"</h4>
 </div>
 
 
 
-<!-- Second Carousel
-<div id="carouselExampleDark" class="carousel carousel-dark slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true"
-      aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7" aria-label="Slide 8"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="8" aria-label="Slide 9"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="9" aria-label="Slide 10"></button>
-  </div>
-
-  <div class="carousel-inner">
-    <div class="carousel-item" *ngFor="let user of userData; let i = index" [ngClass]="{'active': i === 0}"
-      data-bs-interval="10000">
-      <img [src]="user.photo" class="photo" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>{{user.user_name}}</h5>
-        <p>{{user.comments}}</p>
-      </div>
-    </div>
-  </div>
-
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div> -->
 
 
 
@@ -141,4 +106,5 @@
       <a class="page-link links_sytyle" (click)="setPage(page)">{{ page }}</a>
     </li>
   </ul>
+</div>
 </div>
