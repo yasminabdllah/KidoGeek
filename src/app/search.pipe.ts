@@ -6,9 +6,9 @@ import { Course } from '../interfaces/course.interface';
 })
 export class SearchPipe implements PipeTransform {
 
-  transform(filtered_corses:Course[], term:string): any {
+  transform(filtered_corses:Course[], term:string):Course[] {
 
-    return filtered_corses.filter((course)=>course.title.toLocaleLowerCase().includes(term.toLocaleLowerCase()));
+    return filtered_corses.filter((course)=>course.title.toLowerCase().includes(term.toLowerCase()));
   }
 
 }

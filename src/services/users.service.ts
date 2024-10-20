@@ -131,8 +131,8 @@ export class UsersService {
     },
     {
       id: 10,
-      user_name: 'Mariam00',
-      password: 'mariampass',
+      user_name: 'mariam',
+      password: 'Mariampass00',
       role: 'student',
       age: 18,
       enrolled: [50, 70, 90],
