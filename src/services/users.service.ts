@@ -6,6 +6,15 @@ import { User } from '../interfaces/user.interface';
 })
 export class UsersService {
   constructor() { }
+  private loggedIn: boolean = false; 
+
+  login(user: User): boolean {
+    const isAuthenticated = this.users_data.some(
+      users_data => users_data.email === user.email && users_data.password === user.password
+    );
+    this.loggedIn = isAuthenticated; 
+    return isAuthenticated;
+  }
   users_data: User[] = [
     {
       id: 1,
@@ -17,7 +26,9 @@ export class UsersService {
       progress: ['20%', '80%', '33%'],
       email: 'ali88@gmail.com',
       photo: '../assets/usersPhotos/user2.jpg',
-      comments: ["My child absolutely loves the interactive lessons! The gamified approach makes learning to code so much fun."]
+      comments: ["My child absolutely loves the interactive lessons! The gamified approach makes learning to code so much fun."],
+      lastAccess:'12/2/2023',
+      firstAccess:'12/2/2022'
     },
     {
       id: 2,
@@ -29,7 +40,9 @@ export class UsersService {
       progress: ['45%', '10%'],
       email: 'fhassan88@gmail.com',
       photo: '../assets/usersPhotos/user5.jpg',
-      comments: ["The progress tracking feature is really helpful. It's great to see how my kid is improving with each lesson."]
+      comments: ["The progress tracking feature is really helpful. It's great to see how my kid is improving with each lesson."],
+      lastAccess:'12/2/2023',
+      firstAccess:'12/2/2022'
     },
     {
       id: 3,
@@ -131,4 +144,11 @@ export class UsersService {
   ]
   all_User_Data:any=[];
   
+  isLoggedIn(): boolean {
+    return this.loggedIn;
+  }
+
+  getCurrentUser(email: string): User | null {
+    return this.users_data.find(user => user.email === email) || null;
+  }
 }

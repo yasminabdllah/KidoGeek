@@ -19,7 +19,7 @@ import { BlogCardComponent } from './blog/blog-card/blog-card.component';
 import { MaincoursesComponent } from './course/maincourses/maincourses.component';
 import { CoursecatigoryComponent } from './course/coursecatigory/coursecatigory.component';
 import { SearchPipe } from './search.pipe';
-import {  ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { RegisterComponent } from './register/register.component';
 import { RouterModule, Routes } from '@angular/router';
 import { SearchComponent } from './search/search.component';
@@ -28,11 +28,12 @@ import { CartComponent } from './cart/cart.component';
 import { ProfileComponent } from './profile/profile.component';
 import { CourseDetailComponent } from './course-detail/course-detail.component';
 import { PaymentComponent } from './payment/payment.component';
+import { OrderSummaryComponent } from './payment/order-summary/order-summary.component';
+import { PaymentFormComponent } from './payment/payment-form/payment-form.component';
+import { LoginComponent } from './login/login.component';
 
 
-
-
-@NgModule({ 
+@NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
@@ -50,25 +51,25 @@ import { PaymentComponent } from './payment/payment.component';
     CoursecatigoryComponent,
     SearchPipe,
     RegisterComponent,
-   
-    
-
     SearchComponent,
     SearchResultComponent,
     CartComponent,
     ProfileComponent,
     CourseDetailComponent,
-    PaymentComponent
+    PaymentComponent,
+    OrderSummaryComponent,
+    PaymentFormComponent,
+    LoginComponent
   ],
- 
+
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
     RouterModule
-   
-    
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

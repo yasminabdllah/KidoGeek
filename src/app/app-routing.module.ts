@@ -14,6 +14,8 @@ import { CartComponent } from './cart/cart.component';
 import { CoursecatigoryComponent } from './course/coursecatigory/coursecatigory.component';
 import { CourseDetailComponent } from './course-detail/course-detail.component';
 import { PaymentComponent } from './payment/payment.component';
+import { LoginComponent } from './login/login.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 const routes: Routes = [
@@ -25,12 +27,14 @@ const routes: Routes = [
   { path: 'blog', component: BlogComponent, title: 'blog' },
   { path: 'coursecatigory', component: CoursecatigoryComponent, title: 'coursecatigory' },
   { path: 'maincourses', component: MaincoursesComponent, title: 'maincourses' },
+  {path: 'login' , component: LoginComponent},
   { path: 'register', component: RegisterComponent, title: 'register' },
   { path: 'community', component: CommunityComponent, title: 'community' },
   { path: 'search', component: SearchComponent, title: 'search' },
   { path: 'Cart', component: CartComponent, title: 'cart' },
   { path: 'course_detail', component: CourseDetailComponent, title: 'course_detail' },
   { path: 'checkOut', component: PaymentComponent, title: 'Check Out' },
+  { path: 'profile', component: ProfileComponent, title: 'profile' },
   { path: '**', component: NotFoundComponent, title: 'Error' },
 ];
 

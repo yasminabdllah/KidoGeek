@@ -1,0 +1,83 @@
+.animation-button {
+  width: 100%;
+  border: none;
+  padding: 0.833rem;
+  background-color: #fd810d;
+  color: aliceblue;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  border-radius: 10px 10px 0 0;
+  bottom: -2.2rem;
+  right: 0.11rem;
+  opacity: 0;
+}
+
+img {
+  border-top-left-radius: 0.83rem;
+  border-top-right-radius: 0.83rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  height: 300px;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18%;
+  height: 13%;
+  background-color: #fd810d;
+  color: white;
+  border-radius: 50%;
+  float: right;
+  position: absolute;
+  z-index: 2;
+  right: 1.4rem;
+  top: 9.5rem;
+}
+
+.btn {
+  background-color: #fecf03;
+  border-radius: 1.1rem;
+  color: #fffbf8;
+  font-size: 0.8rem;
+}
+
+.btn:hover {
+  border: 1px solid #fecf03;
+  background-color: white;
+  color: #fecf03;
+  box-shadow: #fecf03 0 0 4px 0.5px;
+}
+
+.catigory-card:hover {
+  scale: 1.025;
+}
+.catigory-card:hover .animation-button {
+  opacity: 1;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transition: all ease 0.5s;
+  box-shadow: #ffffff 0px 4px 4px 0px;
+}
+.catigory-card:hover .price {
+  background-color: #fecf03;
+}
+a {
+  text-decoration: none;
+}
+
+.cart{
+  color: #fd810d;
+}
+.removeFromCart{
+  color: #fd310d;
+}
+.cart,
+.removeFromCart{
+  font-size: 22px;
+  transition: all ease 0.5s;
+}

@@ -9,10 +9,8 @@ import { CoursesService } from '../../../services/courses.service';
   styleUrl: './coursecatigory.component.css'
 })
 export class CoursecatigoryComponent {
-  constructor(public _corsesserv:CoursesService){
+  constructor(public _corsesserv:CoursesService){}
 
-  }
-  
 
   course_catigory:any[]=[
     {
@@ -25,8 +23,8 @@ export class CoursecatigoryComponent {
       age:"8-18 years"
     }
     ,
-    
-   
+
+
     {
       catigory:"Mobile APP",
       Title:"mobile",
@@ -55,10 +53,10 @@ export class CoursecatigoryComponent {
       age:"8-18 years"
     }
   ]
-  
+
   filterCourses(category: string):void {
     this._corsesserv.filterCoursesByCategory(category);
   }
-  
+
 
 }

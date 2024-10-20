@@ -9,9 +9,8 @@
   color: #fc800a !important;
   text-decoration: underline;
 }
-
-.btn {
-  border: none;
+.btn{
+  margin-right: 10px;
 }
 .btn_cart {
   position: relative;

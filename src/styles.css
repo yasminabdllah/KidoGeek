@@ -1,27 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: 16px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: rgb(--bs-dark-text-emphasis);
 }
-
+.button_style {
+  border: none;
+  color: #fc800a;
+  background-color: transparent;
+  transition: all ease 0.5s;
+}
+.button_style:hover {
+  transform: rotate(45deg) scale(1.5);
+}
 .logo {
   width: 130px;
   height: 90px;
   margin-right: 10px;
 }
-main{
-  background-color:rgb(255, 255, 254);
+main {
+  background-color: rgb(255, 255, 254);
   margin: 0;
 }
-
 .bttn {
-  border-radius: 20px;
-  box-shadow: #fc800a 0 0 4px 0.5px;
-  color: #fc800a;
-  margin-right: 10px;
+  background-color: #fd810d;
+  color: white;
   font-size: 14px;
+  margin: 0 10px 0 0;
+}
+.bttn:hover {
+  border: 1px solid #fd810d;
+  color: #fd810d;
+}
+.photo {
+  border-radius: 15px;
+  width: 150px;
+  margin-right: 5px;
 }

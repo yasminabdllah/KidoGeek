@@ -30,11 +30,11 @@ export class CartServiceService {
     return this.getCartsData().length;
   }
 
-  removeFromCart(index: number){
-      const confirmation = confirm("Are you sure you want to delete this student?");
-      if (confirmation) {
-        this.courses_cart.splice(index, 1);
-        localStorage.setItem('myCart', JSON.stringify(this.courses_cart));
-      }
+  removeFromCart(courseId: number) {
+    const confirmation = confirm('Are you sure you want to delete this course?');
+    if (confirmation) {
+      this.courses_cart = this.courses_cart.filter(course => course.course_id !== courseId);
+      localStorage.setItem('myCart', JSON.stringify(this.courses_cart));
+    }
   }
 }

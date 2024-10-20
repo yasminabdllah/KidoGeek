@@ -6,6 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './course.component.css'
 })
 export class CourseComponent {
- trem:string=''
-term: any;
+  trem:string=''
 }
